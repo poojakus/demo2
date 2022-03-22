@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    color: chartreuse;
+}
+a
+{
+    margin-left:40px;
+    font-size: 30px;
+    color:chartreuse;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.mt
+{
+    
+    margin-top: 400px;
+    align-items: center;
+    align-content: center;
+
+}

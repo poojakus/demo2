@@ -1,0 +1,20 @@
+{
+  "name": "ch17_retrivedata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^5.0.0-alpha.8",
+    "mongoose": "^6.2.3"
+  }
+}

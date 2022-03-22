@@ -1,0 +1,64 @@
+<%- include('includes/header.ejs',{page_name:'userlist' }) %>
+      <div class="row">
+        <div class="col-12">
+          <div class="card mb-4">
+            <div class="card-header pb-0">
+              <% if(messq.length > 0 ) { %>
+          
+                <h1><%= messq %></h1> 
+             <% } %>
+              <h6>User List</h6>
+              <form method="get" action="/createUser">
+                <button type="submit" class="btn btn-success">Ceate New User...</button>
+              </form>
+      
+            </div>
+            <div class="card-body px-0 pt-0 pb-2">
+              <div class="table-responsive p-0">
+                <table class="table align-items-center justify-content-center mb-0">
+                  <thead>
+                    <tr>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Name</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Email</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Password</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Phone</th>
+                      <th  class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Gender</th>
+                      <th  class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Edit</th>
+                      <th  class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Delete</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                 
+                          
+                           <% author.forEach((item)=> {
+                             %>
+                             <tr>
+                              <td><%= item.name %></td>
+                              <td><%= item.email %></td>
+                              <td><%= item.password %></td>
+                              <td><%= item.phone %></td>
+                              <td><%= item.gender %></td>
+                              <td>
+                                <form action="/edit/<%= item._id %>" method="get" >
+                                  <button type="submit" style="border: none;"><img src="img/pen.png" height="30px" width="30px" ></button>
+                                </form>
+                              </td>
+                              <td>
+                                <form action="/delete/<%= item._id %>" method="get" >
+                                  <button type="submit" style="border: none;"><img src="img/trash.png" height="30px" width="30px" ></button>
+                                </form>
+                              </td>
+                           </tr> 
+                          <% }) %>
+                      
+                           
+                  
+                       
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <%- include('includes/footer.ejs') %>

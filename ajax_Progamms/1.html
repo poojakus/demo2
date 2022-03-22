@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="aj">This is can be loaded</p>
+    <button onclick="loadData()">Click me</button>
+<h1>ihedheudhuu</h1>
+<h1>gygygygy</h1>
+<script>
+    function loadData()
+    {
+        var xhttp=new XMLHttpRequest()
+        xhttp.onreadystatechange=function()
+        {
+            if(this.readyState == 4 && this.status==200)
+            {
+            //    console.log(this.responseText)
+                document.getElementById("aj").innerHTML=this.responseText;
+            }
+        }
+
+      
+      xhttp.open('GET','readmetxt.txt',true)
+    xhttp.send();
+    }
+</script>
+</body>
+</html>

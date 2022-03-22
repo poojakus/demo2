@@ -1,0 +1,107 @@
+body
+{
+    background-color: rgb(1, 6, 34);
+    color: aliceblue;   
+}
+.mt
+{
+    margin-top:50px;
+}
+.fo
+{
+    font-family: 'Satisfy', cursive;
+    color: yellow;
+}
+.bt
+{
+    align-content:center;
+    margin-top:-20px;
+    margin-left:80px;
+    font-size: 20px;
+   
+}
+.bt:hover
+{
+    background-color:yellow;
+  
+   padding:12px;
+   padding-left: 30px;
+   margin-right:100px;
+  
+
+  
+    
+}
+
+.b
+{
+    border-right:1px solid;
+    border-right-color: yellow;
+    height: 500px;
+   
+}
+.im
+{
+    margin-top:10px;
+    margin-left: 350px;
+    width:150px;
+    height:150px;
+    border:solid;
+    border-color:white;
+}
+
+.btnm
+{
+    background-color:yellow;
+    border: none;
+    border-radius: 10px;
+    padding:10px;
+    padding-right:20px;
+    padding-left:20px;
+    margin-left:300px;
+    font-weight:600;
+}
+.btnm:hover{
+    background-color:black;
+    border-color: aqua;
+    color: white;
+    
+}
+
+.btnmm
+{
+    background-color:aqua;
+    border: none;
+    border-radius: 10px;
+    padding:10px;
+    margin-left:30px;
+    font-weight:600;
+}
+.btnmm:hover{
+    background-color:black;
+    border-color: aqua;
+    color: white;
+    
+}
+.active1
+{
+    background-color: yellow;
+    /* padding:10px; */
+    padding-left:13px;
+    padding-right:13px;
+}
+.lg
+{
+    margin-left:80px;
+    font-size: 25px;
+    
+}
+.p12
+{
+   font-size:13px;text-align:center;
+
+}
+.itt
+{
+    height:40px; width:40px;margin-left:100px;margin-top:20px;
+}
